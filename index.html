@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        nav {
+            background-color: #CCC;
+            overflow: hidden;
+            padding: 1em;
+            border-bottom: 1px solid #000;
+        }
+        nav	a {
+            color: #000;
+        }
+        nav	a:visited {
+            color: #000;
+        }
+        nav .navWide {
+            display: none;
+            margin: 0 auto;
+        }
+        nav .navWide .wideDiv {
+            text-align: center;
+        }
+        nav .navWide .wideDiv a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 2em;
+        }
+        nav	.navNarrow i {
+            float: left;
+            cursor: pointer;
+            color: #000;
+        }
+        nav .navNarrow .narrowLinks a {
+            text-decoration: none;
+            display: block;
+            float: left;
+            clear: left;
+            padding: 0.5em 0;
+        }
+        .hidden {
+            display: none;
+        }
+        @media (min-width: 480px) {
+
+            nav .navWide {
+                display: block;
+            }
+
+            nav .navNarrow {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navWide">
+            <div class="wideDiv">
+                <a href="accessibility/focus.html">AC - focus</a>
+                <a href="gridSystem/responsiveGrid/responsive.html">respo grid</a>
+                <a href="flexSystem/responsiveFlex/responsive.html">respo flex</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="navNarrow">
+            <i class="fa fa-bars fa-2x"></i>
+            <div class="narrowLinks hidden">
+                <a href="accessibility/focus.html">AC - focus</a>
+                <a href="gridSystem/responsiveGrid/responsive.html">respo grid</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>da finire grid e flex system</div>
+
+
+    <script>
+        let navLinks = document.querySelector('.navNarrow');
+        let narrowLinks = document.querySelector('.narrowLinks');
+
+        navLinks.addEventListener('click', toggle);
+
+        function toggle() {
+            narrowLinks.classList.toggle('hidden');
+        };
+    </script>
+</body>
+</html>
