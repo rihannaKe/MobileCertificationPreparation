@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="styles/radiogroup.css"/>
+<link rel="stylesheet" href="styles/modal.css"/>
+<style>
+.demo{border:1px solid grey; margin: 15px; padding: 15px; max-width:25%; height: 300px;
+    display: inline-block;}
+</style>
+<body>
+
+<div style="width:100%">
+  <div class="demo">
+     <h3>esempio come gestire focus su modal </h3>
+    <button class="modal-toggle">Open Modal</button>
+
+    <p><small>
+      all'inizio modal-display è none, al click del btn evidenzia il primo elemento dentro il modal con focus()
+      e al press degli arrow-key usa  sugli elementi focus(), al close del modal display:none
+    </small></p>
+
+     <div class="modal">
+       <h1>Oh hai! Wanna join our newsletter?</h1>
+       <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       </p>
+       <div class="field">
+         <label for="fullname">Full Name</label>
+         <input id="fullname" type="text">
+       </div>
+       <div class="field">
+         <label for="email">E-Mail Address</label>
+         <input id="email" type="text">
+       </div>
+       <button id="signup">Sign me up already!</button>
+     </div>
+
+     <div class="modal-overlay"></div>
+
+  </div>
+
+  <div class="demo">
+       <h3>esempio custom radiogrup focus</h3>
+       <ul id="group1" class="radiogroup">
+         <li tabindex="0" class="radio" checked>
+           Water
+         </li>
+         <li tabindex="-1" class="radio">
+           Tea
+         </li>
+         <li tabindex="-1" class="radio">
+           Coffee
+         </li>
+         <li tabindex="-1" class="radio">
+           Cola
+         </li>
+         <li tabindex="-1" class="radio">
+           Ginger Ale
+         </li>
+       </ul>
+       <small>
+         su li tabindex=-1 per quelli non selezionati e tabindex=0
+         per quello selezionato e con js settare checked e tabindex=0 all'utilizzo delle arrow-key
+       </small>
+     </div>
+
+</div>
+<script src="radiogroup.js"></script>
+<script src="modal.js"></script>
+</body>
+</html>
