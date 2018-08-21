@@ -1,0 +1,131 @@
+html,body {
+  color:#616161;
+  width:100%;
+  min-height:100%;
+  font-family:sans-serif;
+  margin:0;
+  padding:0;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+body{
+  display:flex;
+  min-height:100vh;
+  flex-direction:column;
+}
+
+main{
+  flex:1;
+}
+
+img{
+  max-width: 100%;
+  height:auto;
+  display: block;
+}
+
+h1{
+  font-size:34px;
+  line-height: 40px;
+  font-weight: 400;
+}
+h2{
+  font-size:24px;
+  line-height: 32px;
+  margin: 24px 0 16px;
+  font-weight: 400;
+}
+
+a:hover{
+  color:#fa9805
+}
+
+.logo{
+  margin:5px;
+}
+ .content{
+   position:relative;
+   display: inline-block;
+   overflow-y: auto;
+   overflow-x: hidden;
+   -webkit-flex-grow:1;
+   -ms-flex-position:1;
+   z-index: 1;
+   justify-content: space-between;
+   padding-top: 116px;
+   margin: 0;
+   width: 100%;
+ }
+
+ .card {
+   max-width: 600px;
+   margin-bottom: 50px !important;
+   display: flex;
+   flex-flow: row wrap;
+   margin: 0 auto 0 auto;
+   align-items: stretch;
+   padding: 0;
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 2px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+ }
+
+ .card-actions{
+   border-top: 1px solid rgba(0,0,0,.12);
+ }
+
+ .card-actions a{
+   margin-left: 40px;
+ }
+
+.button{
+  background: 0 0;
+  border: none;
+  color:inherit;
+  height: auto;
+  font-size: 16px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.button{
+  background: 0 0;
+  border: none;
+  border-radius: 2px;
+  position: relative;
+  height: 36px;
+  margin: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  color: #OOBCD4
+}
+ .card-text{
+   margin: 16px;
+   flex-grow: 1;
+   height: auto;
+   font-size: 1rem;
+   line-height: 18px;
+   overflow: hidden;
+   padding: 16px;
+   width: 90%;
+   color:#616161;
+ }
+
+ .header{
+   height: 192px;
+   margin: 0;
+   padding: 0 40px 0 60px;
+   
+ }
