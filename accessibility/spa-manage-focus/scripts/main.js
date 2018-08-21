@@ -1,10 +1,10 @@
 var isFirstPage = true;
 
-page('/', function() {
+page('accessibility/spa-manage-focus', function() {
   page.redirect('/what-is-vegemite');
 });
 
-page('/:slug', function(context) {
+page('accessibility/spa-manage-focus:slug', function(context) {
   // This will match any value after the first / in the url. For example, if
   // the url was /foo, the value of slug would be "foo".
   var slug = context.params.slug;
