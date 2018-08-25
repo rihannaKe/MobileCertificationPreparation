@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="styles/checkbox.css"/>
+<link rel="stylesheet" href="styles/radiogroup.css"/>
+<link rel="stylesheet" href="styles/combobox.css"/>
+<style>
+.demo{border:1px solid grey; margin: 15px; padding: 15px; max-width:25%; height: 300px;
+    display: inline-block;}
+</style>
+<body>
+
+
+  <div class="demo">
+    <h2>Custom checkboxes</h2>
+
+         <div tabindex="0" class="checkbox" checked>
+           Tim-Tams
+         </div>
+         <div tabindex="0" class="checkbox">
+           Mint slices
+         </div>
+
+         <h2>Native checkboxes</h2>
+
+         <div>
+           <label>
+             <input type="checkbox" checked>
+             Tim-Tams
+           </label>
+         </div>
+         <div>
+           <label>
+             <input type="checkbox">
+             Mint slices
+           </label>
+         </div>
+
+  </div>
+
+  <div class="demo">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <h3>Drink Options</h3>
+
+      <ul id="group1" class="radiogroup">
+        <li class="radio">
+          Water
+        </li>
+        <li class="radio">
+          Tea
+        </li>
+        <li class="radio">
+          Coffee
+        </li>
+        <li class="radio">
+          Cola
+        </li>
+        <li class="radio">
+          Ginger Ale
+        </li>
+      </ul>
+
+      <div>
+        <button>Order a drink</button>
+      </div>
+  </div>
+
+  <div class="demo">
+    <h2>Combo box example</h2>
+      <label>
+        Choose a drink:
+        <div class="widget">
+          <input type="text" role="combobox" id="comboInput">
+          <div role="listbox" hidden tabindex="-1">
+            <ul role="presentation">
+              <li role="option">Coffee</li>
+              <li role="option">Tea</li>
+              <li role="option">Hot chocolate</li>
+              <li role="option">Water</li>
+              <li role="option">Cola</li>
+              <li role="option">Ginger Ale</li>
+              <li role="option">Orange juice</li>
+            </ul>
+          </div>
+        </div>
+      </label>
+  </div>
+
+
+
+<script src="checkbox.js"></script>
+<script src="radiogroup.js"></script>
+<script src="combobox.js"></script>
+
+</body>
+</html>
