@@ -3,42 +3,36 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" cotent="width=device-width, initial-scale=1"></meta>
-    <title>Basic Form</title>
+    <title>Basic Form Validate</title>
     <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
   <div class="container">
     <div class="layout grey">
-      <main class="cotent">
-        <div class="card shadow">
-          <div class="card-title">
-            <h2>Basic Form</h2>
-          </div>
-          <div class="support-text">
-            <form action="/forms-basic/submit" method="POST">
-              <fieldset>
-                <legend>Payment</legend>
-                <div class="textfield">
-                  <input id="pay-fullname" name="fullname" placeholder="Full Name">
-                </div>
-                <div class="textfield">
-                  <input id="pay-cardnumber" name="cardnumber" placeholder="Card Number">
-                </div>
-                <div class="textfield-inline right">
-                  <input id="pay-expiration" name="expiration" placeholder="Expiration Date">
-                </div>
-                <div class="textfield-inline left">
-                  <input id="pay-cvc" name="cvc" placeholder="Security Code">
-                </div>
-              </fieldset>
-              <div class="card-action">
-                <button class="raised button ripple" type="submit">Place Order</button>
-              </div>
-            </form>
-          </div>
+      <div class="card shadow">
+        <div class="card-title">
+          <h2>Create a Profile</h2>
         </div>
-      </main>
+        <div class="support-text">
+          <form action="/forms-validate/submit" method="POST">
+            <div class="textfield">
+              <input name="username" placeholder="Username">
+            </div>
+            <div class="textfield">
+              <input name="email" placeholer="Email">
+            </div>
+            <div class="textfield">
+              <input name="age" placeholder="Age">
+            </div>
+            <div class="textfield">
+              <input name="website" placeholder="Favorite website">
+            </div>
+            <div class="card-action">
+              <butto class="raised button ripple" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </body>
