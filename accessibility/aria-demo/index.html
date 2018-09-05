@@ -8,13 +8,26 @@
 <link rel="stylesheet" href="styles/radiogroup.css"/>
 <link rel="stylesheet" href="styles/combobox.css"/>
 <style>
-.demo{border:1px solid grey; margin: 15px; padding: 15px; max-width:25%; height: 300px;
-    display: inline-block;}
+.row
+{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+.column
+{
+    display: table-cell;
+    padding:15px;
+    border: 1px solid grey;
+}
 </style>
 <body>
 
+<div class="row">
 
-  <div class="demo">
+
+  <div class="column">
     <h2>Custom checkboxes</h2>
 
          <div tabindex="0" class="checkbox" checked>
@@ -41,7 +54,7 @@
 
   </div>
 
-  <div class="demo">
+  <div class="column">
     <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
@@ -72,7 +85,7 @@
       </div>
   </div>
 
-  <div class="demo">
+  <div class="column">
     <h2>Combo box example</h2>
       <label>
         Choose a drink:
@@ -94,7 +107,7 @@
   </div>
 
 
-
+</div>
 <script src="checkbox.js"></script>
 <script src="radiogroup.js"></script>
 <script src="combobox.js"></script>

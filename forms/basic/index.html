@@ -11,24 +11,31 @@
     <div class="layout grey">
       <div class="card shadow">
         <div class="card-title">
-          <h2>Create a Profile</h2>
+          <h2>
+             Create a Profile
+            <a href="https://developers.google.com/web/fundamentals/design-and-ux/input/forms/">see google docs</a>
+          </h2>
         </div>
         <div class="support-text">
           <form action="/forms-validate/submit" method="POST">
             <div class="textfield">
-              <input name="username" placeholder="Username">
+              <label for="username">Username</label>
+              <input type="text" name="username" placeholder="Username" id="username" autocomplete="username">
             </div>
             <div class="textfield">
-              <input name="email" placeholer="Email">
+              <label for="userEmail">Email</label>
+              <input type="email" name="email" placeholder="Email" id="userEmail" autocomplete="email">
             </div>
             <div class="textfield">
-              <input name="age" placeholder="Age">
+              <label for="userAge">Age</label>
+              <input type="number" name="age" placeholder="Age" id="userAge" autocomplete="age" min="1" max="120" step="1">
             </div>
             <div class="textfield">
-              <input name="website" placeholder="Favorite website">
+              <label for="userWebsite">Website</label>
+              <input type="url" name="website" placeholder="Favorite website" id="userWebsite" autocomplete="website">
             </div>
             <div class="card-action">
-              <butto class="raised button ripple" type="submit">Submit</button>
+              <button class="raised button ripple" type="submit">Submit</button>
             </div>
           </form>
         </div>

@@ -20,16 +20,20 @@
               <fieldset>
                 <legend>Payment</legend>
                 <div class="textfield">
-                  <input id="pay-fullname" name="fullname" placeholder="Full Name">
+                  <label for="pay-fullname">Name</label>
+                  <input type="text" id="pay-fullname" name="ccname"  placeholder="Full Name" required autocomplete="cc-name">
                 </div>
                 <div class="textfield">
-                  <input id="pay-cardnumber" name="cardnumber" placeholder="Card Number">
+                  <label for="pay-cardnumber">Card Number</label>
+                  <input type="number" id="pay-cardnumber" name="cardnumber" placeholder="Card Number" required autocomplete="cc-number">
                 </div>
                 <div class="textfield-inline right">
-                  <input id="pay-expiration" name="expiration" placeholder="Expiration Date">
+                  <label for="pay-expiration">Expiration Date</label>
+                  <input id="pay-expiration" name="cc-exp" placeholder="MM-YYYY" required autocomplete="cc-exp">
                 </div>
                 <div class="textfield-inline left">
-                  <input id="pay-cvc" name="cvc" placeholder="Security Code">
+                  <label for="pay-cvc">Security code</label>
+                  <input id="pay-cvc" name="cvc" placeholder="Security Code" required autocomplete="cc-csc">
                 </div>
               </fieldset>
               <div class="card-action">
