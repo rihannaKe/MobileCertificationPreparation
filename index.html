@@ -4,115 +4,11 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <style>
-
-        body{
-          font-family: "Roboto", "Sans Serif";
-          font-size: 18pt;
-          color: #fff;
-          background: #3498db;
-        }
-
-        .wrapper{
-          margin: 10% auto;
-          width: 400px;
-        }
-
-        ul{
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-
-        label{
-          display: block;
-          cursor: pointer;
-          padding: 10px;
-          border: 1px solid #fff;
-          border-bottom: none;
-        }
-
-        label:hover{
-          background: #26C281;
-        }
-
-        label.last{
-          border-bottom: 1px solid #fff;
-        }
-
-        ul ul li{
-          padding: 10px;
-          background: #59ABE3;
-        }
-
-
-        input[type="checkbox"]{
-          position: absolute;
-          left: -9999px;
-        }
-
-        input[type="checkbox"] ~ ul{
-          height: 0;
-          transform: scaleY(0);
-        }
-
-        input[type="checkbox"]:checked ~ ul{
-          height: 100%;
-          transform-origin: top;
-          transition: transform .2s ease-out;
-          transform: scaleY(1);
-        }
-
-        input[type="checkbox"]:checked + label{
-          background: #26C281;
-          border-bottom: 1px solid #fff;
-        }
-    </style>
+    <link  rel="stylesheet" href="main.css"/>
 </head>
 <body>
-    <div class="wrapper">
-        <ul>
-          <li>
-            <input type="checkbox" id="list-item-1">
-            <label for="list-item-1" class="first">Accessibility</label>
-            <ul>
-              <li><a href="accessibility/focus-demo/index.html" target="_blank">Focus</a><small>vari es: gestire focus per custom radiogroup, modal vedere:<a href="https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex#managing_focus_at_the_page_level" target="_blank">google guides</a> </small></li>
-              <li><a href="accessibility/spa-manage-focus/index.html" target="_blank">SPA-focus</a><small>aggiungedo tabindex=-1 su header di ciascun pagina e usando focus() al click del link vedere main.js</small></li>
-              <li><a href="accessibility/aria-demo/index.html" target="_blank">ARIA </a><small>vari es: uso aria su checkbox</small></li>
-
-              <li><a href="accessibility/tab-order-exam/index.html" target="_blank">Exam15</a></li>
-              <li><a href="accessibility/review-exam/index.html" target="_blank">Exam16</a></li>
-
-            </ul>
-          </li>
-          <li>
-            <input type="checkbox" id="list-item-2">
-            <label for="list-item-2">Grid/Flex Examples</label>
-            <ul>
-              <!--li><a href="gridSystem/responsiveGrid/responsive.html" target="_blank">Responsive grid</a></li>
-              <li><a href="flexSystem/responsiveFlex/responsive.html" target="_blank">respo flex</a></li-->
-            </ul>
-          </li>
-          <li>
-            <input type="checkbox" id="list-item-3">
-            <label for="list-item-3" class="last">Forms</label>
-            <ul>
-               <li><a href="forms/basic/index.html" target="_blank">Basic Form</a></li>
-               <li><a href="forms/credit-card/index.html" target="_blank">Credit Card Form</a></li>
-               <li><a href="forms/contact-info/index.html" target="_blank">Contact Info - googlesamples</a></li>
-               <!-- <li><a href="forms/usingLink/usingLink.html" target="_blank">mediaqueries using links</a></li> -->
-            </ul>
-          </li>
-          <li>
-            <input type="checkbox" id="list-item-4">
-            <label for="list-item-4" class="last">MediaQueries</label>
-            <ul>
-               <li><a href="mediaqueries/basic.html" target="_blank">Media queries basic</a></li>
-               <li><a href="mediaqueries/usingLink/usingLink.html" target="_blank">mediaqueries using links</a></li>
-            </ul>
-          </li>
-        </ul>
+    <div class="wrapper" id="index">
     </div>
-
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
