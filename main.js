@@ -45,6 +45,6 @@ function drawList(data){
 document.addEventListener('DOMContentLoaded', function() {
   fetch('content-index.json')
     .then(res => res.json())
-    .then(response => drawList(response)
-    .catch(error => alert(error) ));
+    .then(response => drawList(response))
+    .catch(error => alert(error) );
   }, false);
