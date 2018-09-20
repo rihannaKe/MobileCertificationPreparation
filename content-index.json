@@ -1,5 +1,16 @@
 [
   {
+    "label":"FE networking",
+    "links":[
+      {
+        "label":"Fetch",
+        "url":"networking/basic-fetch/index.html",
+        "note": "vari es: fetch text, json, image",
+        "docLink":""
+      }
+    ]
+  },
+  {
     "label":"Accessibility",
     "links":[
       {
