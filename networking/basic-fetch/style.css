@@ -1,5 +1,7 @@
 body{
   width:50%;
+  margin:auto;
+  text-align: center;
 }
 
 .container div {
@@ -7,7 +9,6 @@ body{
   margin:20px;
   padding:20px;
   border:1px solid grey;
-  text-align: center;
 }
 
 #image-container {
@@ -16,6 +17,11 @@ body{
 }
 
 #image-container img{
-  /* height:auto; */
   width:100%;
+}
+
+button{
+  font-size:20px;
+  background-color: #88c0e2;
+  padding:10px;
 }

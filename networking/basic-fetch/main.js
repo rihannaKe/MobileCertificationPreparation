@@ -39,7 +39,8 @@ function fetchImage(){
 }
 
 function drawImage(bulbImage){
-   var container = document.getElementById('image-container');
+  var container = document.getElementById('image-container');
+  container.innerHTML=''
   var imgElem = document.createElement('img');
   container.appendChild(imgElem);
   var imgUrl = URL.createObjectURL(bulbImage);
