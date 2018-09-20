@@ -32,11 +32,11 @@ function drawImage(bulbImage){
 }
 
 function drawText(text){
-  documnet.getElementsByClassName('my-json').innerHTML=text;
+  document.getElementsByClassName('my-json').innerHTML=text;
 }
 
 function drawJson(json){
-  documnet.getElementsByClassName('my-json').innerHTML=JSON.stringify(json);
+  document.getElementsByClassName('my-json').innerHTML=JSON.stringify(json);
 }
 
 
