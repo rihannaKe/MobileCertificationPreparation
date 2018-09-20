@@ -1,47 +1,47 @@
 let textUrl = 'resources/my-image.jpg';
 let jsonUrl = 'resources/colors.json';
-let imageUrl = 'resources/text';
+let imageUrl = 'resources/words.txt';
 
 
 
 function fetchText(){
-  return fetch(jsonUrl)
+  fetch(textUrl)
       .then( response => response.text() )
       .then( myText =>  drawText(myText) )
-      .catch(() => console.log('catched') );
+      .catch( error =>  showError(error) );
 }
 
 function fetchJson(){
-  return fetch(jsonUrl)
+  fetch(jsonUrl)
       .then( response => response.json() )
       .then( myJson =>  drawJson(myJson) )
-      .catch(() => console.log('catched') );
+      .catch( error =>  showError(error) );
 }
 
 function fetchImage(){
-  return fetch(imageUrl)
-        .then( response => response.blob())
+  fetch(imageUrl)
+        .then( response => response.blob() )
         .then( response => drawImage(response) )
-        .catch( () => console.log('catched') );
+        .catch( error => showError(error) );
 }
 
 function drawImage(bulbImage){
-   var imgElem = document.getElementsByClassName('my-image');
+   var imgElem = document.getElementById('myImage');
    var imgUrl = URL.createObjectURL(bulbImage);
    imgElem.src = imgUrl;
 }
 
 function drawText(text){
-  document.getElementsByClassName('my-json').innerHTML=text;
+  document.getElementById('myText').innerHTML=text;
 }
 
 function drawJson(json){
-  document.getElementsByClassName('my-json').innerHTML=JSON.stringify(json);
+  document.getElementById('myJson').innerHTML=JSON.stringify(json);
 }
 
 
-function showError(){
-
+function showError(error){
+  console.log('Looks like there was a problem: \n', error)
 }
 
 
