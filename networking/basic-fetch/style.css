@@ -1,0 +1,11 @@
+body{
+  width:100%;
+}
+
+.container div {
+  width:100vw;
+  margin:20px;
+  padding:20px;
+  border:1px solid grey;
+  text-align: center;
+}

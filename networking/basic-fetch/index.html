@@ -4,10 +4,26 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link  rel="stylesheet" href="main.css"/>
+    <link  rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <h1>Fetch examples</h1>
+
+  <div class="container">
+    <div class="item1">
+      <button onclick="fetchText()">fetch text</button>
+      <p class="my-text"></p>
+    </div>
+    <div class="item2">
+      <button onclick="fetchImage()">fetch image</button>
+      <img id="myImage" />
+    </div>
+    <div class="item3">
+      <button onclick="fetchJson()">fetch json</button>
+      <p class="my-json"></p>
+    </div>
+  </div>
+
   <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
