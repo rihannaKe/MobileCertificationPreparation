@@ -1,11 +1,21 @@
 body{
-  width:100%;
+  width:50%;
 }
 
 .container div {
-  width:100vw;
+  width:100%;
   margin:20px;
   padding:20px;
   border:1px solid grey;
   text-align: center;
+}
+
+#image-container {
+  margin:auto;
+  width:50vw;
+}
+
+#image-container img{
+  /* height:auto; */
+  width:100%;
 }

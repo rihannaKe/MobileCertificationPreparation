@@ -7,20 +7,20 @@
     <link  rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>Fetch examples</h1>
+  <h1>Fetch examples see <a href="https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api" target="_blank">fetch api docs</a></h1>
 
   <div class="container">
-    <div class="item1">
-      <button onclick="fetchText()">fetch text</button>
-      <p id="myText"></p>
-    </div>
-    <div class="item2">
-      <button onclick="fetchImage()">fetch image</button>
-      <img id="myImage" />
-    </div>
-    <div class="item3">
+    <div>
       <button onclick="fetchJson()">fetch json</button>
       <p id="myJson"></p>
+    </div>
+    <div>
+      <button onclick="fetchImage()">fetch image</button>
+      <span id="image-container"></span>
+    </div>
+    <div>
+      <button onclick="fetchText()">fetch text</button>
+      <p id="myText"></p>
     </div>
   </div>
 
