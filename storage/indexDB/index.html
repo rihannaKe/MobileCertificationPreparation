@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IndexDB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div>
+      <h1>My Movies</h1>
+      <main>
+        <section>
+          <div>
+            <h2>Add a movie</h2>
+          </div>
+          <div>
+            <form>
+              <div>
+                  <input id="title" name="title" placeholder="Movie title"/>
+              </div>
+              <div>
+                  <input id="director" name="director" placeholder="Director"/>
+              </div>
+              <div>
+                  <input id="year" name="year" placeholder="Year"/>
+              </div>
+              <div>
+                  <input id="rating" name="rating" placeholder="Rating"/>
+              </div>
+              <div>
+                  <input id="stars" name="stars" placeholder="stars"/>
+              </div>
+              <div>
+                <button type="submit" id="addMovie">
+                  Add Movie
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <hr/>
+        <h1 id="new">Movies collection</h1>
+        <div id="target"></div>
+      </main>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

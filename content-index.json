@@ -87,6 +87,23 @@
   },{
     "label":"Layout",
     "links":[
+        {
+          "label":"3 cols grid",
+          "url":"gridSystem/threeColGrid/index.html",
+          "note":"exam",
+          "docLink":""
+        }
+      ]
+  }
+  ,{
+    "label":"Storage",
+    "links":[
+        {
+          "label":"Index db es",
+          "url":"storage/indexDB/index.html",
+          "note":"",
+          "docLink":""
+        }
       ]
   }
 
